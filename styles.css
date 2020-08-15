@@ -2,6 +2,7 @@
     display:none;
 }
 
+
 .active[data-tab-content]{
     display:block;
 }
@@ -12,19 +13,21 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 0;
 }
 
 .tab{
     cursor:pointer;
     padding: 10px;
+    color: white;
+    font-size: 2;
 }
 
 .tab.active{
-    background-color: greenyellow;
+    background-color: rgb(255, 47, 245);
 }
 .tab:hover{
-    background-color: #AAA;
+    background-color: green;
 }
 
 .tab-content{
@@ -67,3 +70,18 @@ body{
        while the background image is loading */
     background-color: #464646;
   }
+
+ 
+  html {
+    height: 100%;  
+    overflow: scroll;
+    overflow-x:hidden;
+      font-family: Raleway;
+      background-color: #F5F5F5;
+      
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
