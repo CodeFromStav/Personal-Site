@@ -2,27 +2,46 @@
 
 <html>
 
-<head>  </head> <!-- Sets format for page using file styles.css-->
+<head> 
+    <script src="script.js" defer></script> 
+    <link rel = "stylesheet" href = "styles.css">
 
-    <div class="topnav" id="myTopnav">
-        <a href = "#home" >Home</a>
-        <a href = "#contact" >Contact</a>
-        <a href = "#about">About</a>
-        <a href = "javascript:void(0);" class = "icon" onclick="myFunction()"> <!-- used to open and close topnav on small screens-->
-          <i class = "fa fa-bars"></i>  
-        </a>
-        
-        <link rel = "stylesheet" href = "styles.css">
-    </div>>
+</head> 
+
 
     <body>
 
-        <img src="myimage.png" alt="Image Not Found">
+        <!-- <img src="myimage.png" alt="Image Not Found">
         <style>
             img{
                 border-radius:50%;
             }
-        </style>
+        </style> -->
+        <ul class = "tabs">
+        <li data-tab-target = "#home" class = "active tab"> Home </li>
+        <li data-tab-target = "#contact" class = "tab"> Contact </li>
+        <li data-tab-target = "#about" class = "tab"> About </li>
+        </ul>
+
      
+    
+
+        <div class = "tab-content">
+
+            <div id = "home" data-tab-content class = "active">
+                <h1> Home </h1>
+            </div>
+
+            <div id = "contact" data-tab-content>
+                <h1> Contact </h1>
+            </div>
+
+            <div id = "about" data-tab-content>
+                <h1> About </h1>
+            </div>
+
+    
+        </div>
+
     </body>
 </html>
