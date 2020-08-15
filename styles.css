@@ -7,19 +7,22 @@
     display:block;
 }
 
-.tabs{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-bottom: 0;
+.vertical-menu{
+    width: 200px;
+}
+
+.vertical-menu a{
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
 }
 
 .tab{
     cursor:pointer;
     padding: 10px;
-    color: white;
+    color: black;
     font-size: 2;
 }
 
@@ -47,29 +50,22 @@
     background-size: cover;
 } */
 
+.links{
+    display: flex;
+    height: 100px;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+    border: 2px solid grey;
 
-body{
-    /* Location of the image */
-    background-image: url(assets/myimage.png);
-    
-    /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
-    
-    /* Background image doesn't tile */
-    background-repeat: no-repeat;
-    
-    /* Background image is fixed in the viewport so that it doesn't move when 
-       the content's height is greater than the image's height */
-    background-attachment: fixed;
-    
-    /* This is what makes the background image rescale based
-       on the container's size */
-    background-size: cover;
-    
-    /* Set a background color that will be displayed
-       while the background image is loading */
-    background-color: #464646;
-  }
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+
+}
+
 
  
   html {
@@ -85,3 +81,82 @@ body{
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url(assets/background.jpg);
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    height: 100vh;
+      font-family: poppins;
+  }
+  .navbar{
+    padding-top: 25px;
+  }
+  nav {
+   position: relative;
+   width: calc(100% - 60px);
+   margin: 0 auto;
+   background: #000000;
+   z-index: 1;
+   text-align: right;
+   padding-right: 2%;
+  }
+  .logo {
+    width: 25%;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    padding: 10px 25px;
+  }
+  .menu-area li {
+    display: inline-block;
+      list-style-type: none;
+  }
+  .menu-area a {
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 15px 25px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+      text-decoration: none;    
+  }
+  .menu-area a:hover {
+    background: deeppink;
+    color: #fff;
+  }
+  nav:before {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-right: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    left: 0;
+  }
+  nav:after {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    right: 0;
+  }
+  
