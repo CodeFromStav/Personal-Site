@@ -108,6 +108,7 @@
    z-index: 1;
    text-align: right;
    padding-right: 2%;
+   padding: 0% ;
   }
   .logo {
     width: 25%;
@@ -129,7 +130,7 @@
     text-transform: uppercase;
     display: block;
     padding: 15px 25px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 30px;
     position: relative;
     z-index: 1;
